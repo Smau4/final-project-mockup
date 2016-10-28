@@ -1,0 +1,16 @@
+<template name="Header">
+    <div style="border-radius: 0px" class="ui top fixed borderless inverted menu">
+  <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1 style="color: #98FB98">Study Buddy</h1></a>
+      {{#if currentUser}}
+        <a style="color: #98FB98;" class="{{ isActiveRoute 'User_Profile_Page'}} item" href="{{ pathFor 'User_Profile_Page' }}">Profile </a>
+      {{/if}}
+      <a style="color: #98FB98;" class="{{ isActiveRoute 'Create_Study_Session'}} item" href="{{ pathFor 'Create_Study_Session' }}">Create Study Session </a>
+      <a style="color: #98FB98;" class="{{ isActiveRoute 'Edit_Study_Session'}} item" href="{{ pathFor 'Edit_Study_Session' }}">Edit Study Session </a>
+      <a style="color: #98FB98;" class="{{ isActiveRoute 'User_Home_Page'}} item" href="{{ pathFor 'User_Home_Page' }}">User Home Page </a>
+      <a style="color: #98FB98;" class="{{ isActiveRoute 'User_Profile_Page'}} item" href="{{ pathFor 'User_Profile_Page' }}">User Profile Page </a>
+      <a style="color: #98FB98;" class="{{ isActiveRoute 'Leaderboard'}} item" href="{{ pathFor 'Leaderboard' }}">Leaderboard </a>
+      <a href="#" class="item">{{> loginButtons }} </a>
+    </div>
+  </div>
+</template>

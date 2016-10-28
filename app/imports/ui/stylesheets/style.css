@@ -1,0 +1,12 @@
+body {
+  padding-top: 61px;  /* Move body of page below navbar. */
+}
+
+#homepage{
+  background: url('/images/homepage.jpg')
+  background-size: cover;
+}
+
+#login-buttons a, .accounts-dialog a {
+  color: #98FB98;
+}
